@@ -9,7 +9,7 @@
 name = "RPAProject"
 
 # Friendly name, used in the release notes and README only.
-display_name = "RPAProject"
+display_name = "RPA Project"
 
 # The Python file PyInstaller starts from.
 entrypoint = "app.py"
