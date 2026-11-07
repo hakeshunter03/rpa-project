@@ -93,18 +93,18 @@ def get_order_data(invoice_num, filename, directory):
 
     return order_data, name, email, date
 
-order_data, name, email, date = get_order_data(8515, 'Order1.xlsx', directory)
+#order_data, name, email, date = get_order_data(8515, 'Order1.xlsx', directory)
 
 # INSERT ANSWER FOR QUESTION 4 HERE
 def create_invoice(invoice_num, order_data, directory):
     create_pdf(directory + 'MasterInvoice.pdf', directory + f'Invoice {invoice_num}.pdf', order_data)
 
 
-create_invoice(8515, order_data, directory)
+#create_invoice(8515, order_data, directory)
 
 # INSERT ANSWER FOR QUESTION 5 HERE
- gmail_password_path = select_file('Please select the gmail password file')
-  gmail_password = open(gmail_password_path).read()
+gmail_password_path = select_file('Please select the gmail password file')
+gmail_password = open(gmail_password_path).read()
 def send_email(invoice_num, name, email, date, directory):
     gmail_user = "hakeshunter03@gmail.com"
   
